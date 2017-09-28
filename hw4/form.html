@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset=“utf-8”>
+    <title>Favorite Things</title>
+    <link href="form.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Indie+Flower" rel="stylesheet">
+</head>
+<h1>Bad Animal Facts</h1>
+<h2>Welcome!</h2>
+<aside>Please register for our site here</aside>
+    <form action="handle_form.php" method="post">
+    
+        <label for="first_name">First Name:</label> <input type="text" name="first_name" required >
+    	<label for="last_name">Last Name:</label> <input type="text" name="last_name" required >
+    	<label for="email">Email Address:</label> <input type="email" name="email" required >
+    	<label for="password">Password:</label> <input type="password" name="password" required>
+    	<label for="confirm">Confirm Password:</label> <input type="password" name="confirm" required >
+        <label for="month, day, year">Birth Date:</label>
+            <select id="month" name="month" required></select>
+              <script>
+                var month = 1;
+                var till = 12;
+                var options = "<option value=''>Month</option>";
+                for(var m=month; m<=till; m++){
+                  options += "<option value =" + m + ">" + m +"</option>";
+                }
+                document.getElementById("month").innerHTML = options;
+              </script>
+          
+            <select id="day" name="day" required></select>
+            <script>
+                var day = 1;
+                var till = 31;
+                var options = "<option value=''>Day</option>";
+                for(var d=day; d<=till; d++){
+                  options += "<option value =" + d + ">" + d +"</option>";
+                }
+                document.getElementById("day").innerHTML = options;
+            </script>
+            <select id="year" name="year" required></select>
+              <script>
+                var year = 1950;
+                var till = 2017;
+                var options = "<option value=''>Year</option>";
+                for(var y=year; y<=till; y++){
+                  options += "<option value =" + y + ">" + y +"</option>";
+                }
+                document.getElementById("year").innerHTML = options;
+        
+              </script></label>
+         <label for="animal">Favorite Animal:</label>
+         <select id="animal" name="animal" required>
+             <option value="">Choose one</option>
+             <option value="penguin">penguin</option>
+             <option value="dolphin">dolphin</option>
+             <option value="bear">bear</option>
+             <option value="rabbit">rabbit</option>
+             <option value="kangaroo">kangaroo</option>
+         </select>
+        <button type="submit" value="submit"><span>Submit </span></button>
+        </div>
+    </form>
+<body> 

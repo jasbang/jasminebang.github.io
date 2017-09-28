@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'open sans condensed', sans-serif;
+    background-image:url("http://cdn.wallpapersafari.com/53/87/TEmJgI.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+
+#container {
+    margin: auto;
+    width: 500px;
+}
+
+#calculator {
+    padding: 30px;
+}
+
+p {
+    margin: 10px
+}
+
+/*accessible but pretty!*/
+
+[type="radio"] {
+  border: 0; 
+  clip: rect(0 0 0 0); 
+  height: 1px;
+  margin: -1px; 
+  overflow: hidden; 
+  padding: 0; 
+  position: absolute; 
+  width: 1px;
+}
+[type="radio"]:checked + label {
+    font-weight: bolder;
+}
+
+[type="radio"]:focus + label::after {
+  content: '\0020\2190';
+  font-size: 1.1em;
+  line-height: 1;
+  vertical-align: -0.125em;
+}
+
+
+input[type="submit"] {
+    width: 100%;
+    padding: 7px;
+    border-radius: 20px;
+}
+
+select {
+    border-radius: 20px;
+}
+
+h1 {
+    font-family: 'Princess Sofia', fantasy;
+    font-size: 39px
+}
+
+label {
+    cursor: pointer;
+}
+
+.number {
+    font-weight: bold;
+}

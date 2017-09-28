@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset=“utf-8”>
+    <title>Hogwarts Tuition Calculator</title>
+
+<link href="registration.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Princess+Sofia|Open+Sans+Condensed:300" rel="stylesheet">
+</head>
+
+<body> 
+
+<div id="container">
+	<div id="calculator">
+<h1>Hogwarts Tuition Calculator</h1>
+<h3>Fill out this form to calculate the total cost of tuition:</h3>
+
+<form action="handle_calc.php" method="post">
+
+<p>Are you a:<br>
+<input type="radio" name="residency" id="c1" value="46"> <label for="c1">Witch or Wizard</label> <br>
+<input type="radio" name="residency" id="c2" value="236"> <label for="c2">Muggle</label><br>
+</p>
+<p>Number of Units: <select name="units">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+</select></p>
+
+    <p>There is a <strong>mandatory</strong> Student Health Fee of <span class="number"><input type="hidden" name ="health" value="19" />19 Galleons</span> for all registered students</p>
+
+<h4>Optional fees:</h4>
+
+<p>Express Owl Service: <br>
+    <input type="radio" name="csc" id="b1" value="0"> <label for="b1">No</label> <br>
+<input type="radio" name="csc" id="b2" value="20"> <label for="b2">Yes</label><br>
+</p>
+
+<p>Broom Storage Permit:<br>
+    <input type="radio" name="parking" id="d1" value="0"> <label for="d1">No</label><br>
+<input type="radio" name="parking" id="d2" value="25"> <label for="d2">Yes</label><br>
+</p>
+
+<input type="submit" name="submit" value="Submit" />
+
+</form>
+	</div>
+</div>
+</body>
+</html>
