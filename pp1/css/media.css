@@ -1,0 +1,14 @@
+@media (max-width: 800px) {
+    div#register,aside {
+    float: none;
+    width: 100%;
+        
+    }
+    div#register:after {
+	content:" ";
+	clear: both;
+}
+    h1 {
+        font-size: 2.5em;
+    }
+  }

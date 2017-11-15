@@ -1,0 +1,62 @@
+body {
+	background-image: url('assets/batman.jpg');
+	color: #fff;
+	font-family: 'Saira Extra Condensed', sans-serif;
+	position: relative;
+	min-height: 100%;
+}
+
+div#register {
+	width: 50%;
+	min-width: 300px;
+	background-color: #000;
+	float: left;
+	padding: 10px;
+	margin:30px;
+	margin-bottom: 150px;
+}
+
+aside {
+	background-color: #ccc;
+	padding: 10px;
+	float: left;
+	margin:30px;
+}
+
+input::-webkit-input-placeholder {
+	color: black;
+}
+
+input:-moz-placeholder {
+	/* Firefox 18- */
+	color: black;
+}
+
+input::-moz-placeholder {
+	/* Firefox 19+ */
+	color: black;
+}
+
+input:-ms-input-placeholder {
+	color: black;
+}
+
+input[type='text'], input[type='password'], input[type='email'], textarea {
+	border: 1px black;
+}
+
+h1 {
+	font-family: 'Nosifer', fantasy;
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 3em;
+	color: #30c4db;
+}
+
+main:after {
+	content: " ";
+	clear: both;
+	display: block;
+}

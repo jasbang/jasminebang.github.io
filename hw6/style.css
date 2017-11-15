@@ -1,0 +1,27 @@
+input[type="text"] {
+    display:block;
+    border:none;
+    border-bottom:black;
+    width: 100%;
+    margin:5px;
+    text-align: center;
+    padding: 4px;
+}
+form {
+    border: grey 5px;
+    display:block;
+}
+div.calculator {
+    background-color: #303030;
+    padding: 30px;
+    width: 300px;
+    margin: 0 auto;
+    border-radius:50px;
+}
+input[type="submit"] {
+    margin:0 auto;
+}
+div.answer {
+    text-align:center;
+    display:block;
+}
